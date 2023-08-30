@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Cocktail API</title>
+  </head>
+  <body>
+    <nav>
+      <img src="cocktail.webp" alt="cocktail" class="nav-img" />
+      <h1>Cocktail Finder</h1>
+      <img src="cocktail.webp" alt="cocktail" class="nav-img" />
+    </nav>
+    <div id="search-and-clear">
+      <input placeholder="Search your cocktail" type="text" id="search-bar" />
+      <div id="buttons">
+        <button id="search-btn" type="button" onclick="cocktailSearch()">
+          <svg
+            id="search-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg></button
+        ><button onclick="clearAll()" id="clear-btn">
+          <svg
+            id="clear-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="no-cocktail-found">
+      <button onclick="closeError()" id="close-error">x</button>
+      <p>
+        It looks like your cocktail is not correctly written.Please check it one
+        more time or try with another one!
+      </p>
+    </div>
+    <div id="desc">
+      <h2>Learn all the cocktails worldwide!</h2>
+      <p>
+        We are here to show all the ingridients of your favourite cocktails.
+        Just type in the name and scroll down to see everything you need to
+        prepare them at home! Cheers and enjoy!
+      </p>
+    </div>
+    <div id="preview-div">
+      <img
+        id="preview"
+        src="https://media-api.xogrp.com/images/7bdee2ed-62a6-4e17-b616-d2e5dcf117bb~cr_0.0.2471.1655?quality=50"
+        alt="houseparty"
+      />
+    </div>
+    <main>
+      <div class="cocktails-holder">
+        <img src="" alt="cocktail" class="cocktail-thumb" />
+        <h3 class="cocktail-name">Strawberry Mojito</h3>
+        <p class="ingredients">
+          <b>Ingredients:</b>
+        </p>
+        <p class="glass"><b>Glass-type</b></p>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>Do not forget to have a great time!</p>
+        <img src="cheers-footer.jpg" alt="cheers" id="bottom-img" />
+      </div>
+    </footer>
+  </body>
+</html>
